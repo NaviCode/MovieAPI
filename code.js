@@ -16,7 +16,8 @@ $(document).ready(function () {
 
     function showResults(results){
         for(var i in results){
-            $('#movieResults').append(results[i]['Title'] + '<br>');
+            $('#movieResults').append("<a href=http://www.imdb.com/title/"+results[i].imdbID+" target='_blank'>"+results[i].Title + ' - ' + results[i].Year +"</a>" +'<br>');
         }
     };
+    
 });
